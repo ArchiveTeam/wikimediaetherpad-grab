@@ -76,7 +76,7 @@ if not WGET_AT:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = '20260422.01'
+VERSION = '20260422.02'
 USER_AGENT = 'Mozilla/5.0 (X11; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0'
 TRACKER_ID = 'wikimediaetherpad'
 TRACKER_HOST = 'legacy-api.arpa.li'
@@ -287,7 +287,7 @@ class WgetArgs(object):
 project = Project(
     title=TRACKER_ID,
     project_html='''
-        <img class="project-logo" alt="Project logo" src="" height="50px" title="https://wiki.archiveteam.org/images/thumb/f/f3/Archive_team.png/235px-Archive_team.png"/>
+        <img class="project-logo" alt="Project logo" src="" height="50px" title="https://wiki.archiveteam.org/images/6/62/Wikimedia-etherpad-icon.png"/>
         <h2>Wikimedia Etherpad <span class="links"><a href="https://etherpad.wikimedia.org/">Website</a> &middot; <a href="http://tracker.archiveteam.org/wikimediaetherpad/">Leaderboard</a> &middot; <a href="https://wiki.archiveteam.org/index.php/Wikimedia_Etherpad">Wiki</a></span></h2>
         <p>Archiving Wikimedia Etherpad.</p>
     '''
