@@ -550,6 +550,10 @@ wget.callbacks.httploop_result = function(url, err, http_stat)
   if status_code == 0 or retry_url then
     io.stdout:write("Server returned bad response. ")
     io.stdout:flush()
+    if string.match(url["url"], "^https://etherpad%.wikimedia%.org/socket%.io/") then
+      abort_item()
+      return wget.actions.ABORT
+    end
     tries = tries + 1
     local maxtries = 5
     if tries > maxtries then
